@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kanit:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+#span{ 
+  font-family: 'Dela Gothic One', cursive; 
+  color: #fc9700;
+  text-transform: uppercase; 
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0008); 
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+@keyframes scroll_2 {
+    0%   { transform: translateY(0); opacity: 1; }
+    25%  { opacity: 1; }
+    75%  { transform: translateY(.75em); opacity: 0; }
+    100% { transform: translateY(0); opacity: 0; }
+  }
+  
+    
+  .scroll-icon__dot {
+    display: block;
+    position: absolute;
+    left: 50%;
+    background: #000000;
+    height: .5em;
+    width: .5em;
+    top: .6em;
+    margin-left: -.25em;
+    border-radius: 50%;
+    transform-origin: top center;
+    backface-visibility: hidden;
+    animation: scroll_2 2s ease-out infinite;
+  }
+   
+  .scroll-icon {
+margin-top: 7%;
+    margin-left: 50%;
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 1.5em;
+    border: .25em solid #000000;
+    border-radius: 1em;
+  }
+  @keyframes animate
+{
+    0%,18%,20%,50.1%, 60%, 65.1%, 80%,90.1%,92%
+     {
+         color:#fc9700;
+        text-shadow: none;
+     }
+    18.1%,20.1%, 30%, 50%, 60.1%, 65%, 80.1% ,90%, 92.1%, 100%
+    {   
+        color:#fff;
+        text-shadow: 0 0 10px #fc9700,            
+        0 0 20px #fc9700,           
+        0 0 40px  #fc9700,        
+        0 0 80px #fc9700,   
+        0 0 160px #fc9700;
+                   
+    }
+
+}
