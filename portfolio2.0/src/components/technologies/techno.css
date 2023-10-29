@@ -1,0 +1,13 @@
+
+
+.svg{
+    cursor: pointer; /* Change cursor to a pointer */
+
+}
+.svg:hover{
+    cursor: pointer; /* Change cursor to a pointer */
+color: gray;
+
+transform: scale(1.2); /* Zoom in by 20% (adjust as needed) */
+ 
+}
