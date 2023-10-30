@@ -6,7 +6,7 @@ const hero = () => {
   return (
     <div className='flex flex-col justify-center items-center py-14'>
 
-<div className='flex flex-row gap-32 justify-center '>
+<div className='flex gap-32 justify-center max-md:flex-col '>
    <div className='flex flex-col justify-center items-center'>
       <p className='font-bold mb-4 text-3xl lg:text-7xl '> 
         <p className='text-[#909090] text-[50%] flex items-center justify-center' >Hello We Are</p>
