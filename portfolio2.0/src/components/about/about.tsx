@@ -4,8 +4,8 @@ import Tech from "../technologies/techno"
 
 const about = () => {
   return (
-    <div className='flex flex-row justify-center items-center gap-32'>
-        <div className='flex flex-col'> 
+    <div className='flex px-24 max-sm:px-12 flex-wrap py-7 justify-center items-center gap-32'>
+        <div className='flex flex-col max-w-md'> 
         <p id="tt" className="text-2xl max-w-2xl"> 
         We are a dynamic duo of experienced  <span className="keyword">software developers</span> , 
         specializing in web development. With expertise in <span className="keyword">React JS,

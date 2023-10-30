@@ -13,7 +13,7 @@ const techno = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-9  ">
     <h1 className="text-4xl">Technologies we use</h1>
-    <div className='grid grid-cols-4 grid-rows-3 gap-12'>
+    <div className='flex flex-wrap max-w-md gap-12 items-center justify-center'>
     <motion.div
           ref={ref}
           initial="hidden"
