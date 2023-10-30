@@ -4,13 +4,12 @@
 #tt{ 
     font-family: 'Inter', sans-serif;
      text-align: center;
-     
     line-height: 1.8; 
     word-spacing: 2px;
 }
 
 .keyword{
     font-weight: 500; 
-    color: #000;
+    color: #0d2cb6;
     margin-bottom: 0.5rem;
 }
