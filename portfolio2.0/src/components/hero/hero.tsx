@@ -4,7 +4,7 @@
 
 const hero = () => {
   return (
-    <div className='flex flex-col justify-center items-center py-14'>
+    <div className='flex flex-col justify-center items-center py-28'>
 
 <div className='flex gap-32 justify-center max-md:flex-col '>
    <div className='flex flex-col justify-center items-center'>
