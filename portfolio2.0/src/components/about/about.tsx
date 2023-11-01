@@ -27,8 +27,8 @@ const about = () => {
         <p id="tt" className="text-xl max-w-2xl text-center "> 
         We are a dynamic duo of experienced  <span className="keyword">software developers</span> , 
         specializing in web development. With expertise in <span className="keyword">React JS,
-         TypeScript, and Tailwind CSS </span>, we excel in creating <span className="keyword">responsive landing pages</span> 
-         and eye-catching <span className="keyword"> splash pages.</span> 
+         TypeScript, and Tailwind CSS </span>, we excel in creating <span className="keyword">responsive landing pages </span> 
+         and eye-catching <span className="keyword"> splash pages. </span> 
           Let us bring your web projects to life with our skills and passion for design and functionality.  
              </p>
   
