@@ -1,8 +1,10 @@
+.svg2 {
+    /* Define the initial state */
+    transform: scale(1);
+    transition: transform 0.3s ease; /* Adjust the duration and timing function as needed */
+}
 
 .svg2:hover {
     cursor: pointer;
-   transform: scale(1.2);
-
+    transform: scale(1.2); /* New scale value when hovering */
 }
-
- 

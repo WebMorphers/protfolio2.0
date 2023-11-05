@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 import toast  from 'react-hot-toast';
 import { motion } from 'framer-motion';
+import Footer  from '../Footer/Footer';
 import { useInView } from 'react-intersection-observer';
 
 
@@ -40,6 +41,7 @@ const Contact = () => {
   };
 
   return (
+     
     <motion.div
           ref={ref}
           initial="hidden"
@@ -49,10 +51,11 @@ const Contact = () => {
          >
  
      
-    <section className="bg-white dark:bg-[#7081decb]">
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+
+    <section className="bg-white dark:bg-[#7081decb]"> 
+       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Want to start a project ?</h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Let’s Talk</p>
+        <p className="mb-8 lg:mb-16 font-bold text-center text-gray-500 dark:text-green-900 sm:text-xl   ">Let’s Talk</p>
         <form onSubmit={sendEmail} className="space-y-8">
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
@@ -81,7 +84,7 @@ const Contact = () => {
             />
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+            <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your message</label>
             <textarea
               name="message"
               id="message"
@@ -91,11 +94,31 @@ const Contact = () => {
               placeholder="Leave a comment..."
             ></textarea>
           </div>
-          <button type="submit" value="Send" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover-bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover-bg-primary-700 dark:focus-ring-primary-800">Send message</button>
-        </form>
+          <button
+    className="group relative inline-block focus:outline-none focus:ring"
+    type="submit"
+    value="Send"
+  >
+    <span
+      className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-yellow-300 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
+    ></span>
+
+    <span
+      className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75"
+    >
+      Send message
+    </span>
+  </button>
+         </form>
       </div>
+
+      
+    
     </section>
+    <Footer />
+    
     </motion.div>
+     
   );
 };
 

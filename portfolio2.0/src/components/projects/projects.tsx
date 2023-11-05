@@ -51,29 +51,21 @@ const Projects = () => {
     }
   }, [isInView, inView]);
   return (
-    <div className="lg:py-[10%]  container mx-auto pt-20 flex items-center justify-center flex-col min-w-full">
-      <h1 className="xs:text-[50px] sm:text-[60px] md:text-[66px]">Projects</h1>
+    <div className="lg:py-[10%]  container mx-auto bg-[#f9f9f9] pt-20 flex items-center justify-center flex-col min-w-full ">
+      <h1 className="max-sm:text-[50px] sm:text-[80px] md:text-[66px]">Projects</h1>
       <div
         className="mt-4 line-height-18 word-spacing-4px px-[12%] align-center justify-center text-center"
         id="te"
       >
-        <p className="xs:text-[18px] sm:text-[20px] md:text-[20px] te">
-          With a wealth of experience in web development, we are a team of
-          dedicated creators driven by innovation and technical excellence. Our
-          diverse portfolio includes successful collaborations with a wide range
-          of clients, from startups to large enterprises. We are committed to
-          crafting tailor-made websites that combine aesthetics, functionality,
-          and performance. Our cutting-edge technical expertise enables us to
-          embrace the latest technologies to meet each client's unique needs. We
-          take pride in continuously pushing the boundaries of creativity to
-          deliver exceptional online experiences.
+        <p className="max-sm:text-[18px] sm:text-[20px] md:text-[20px] te">
+        We're an experienced web development team focused on innovation and technical excellence. Our portfolio spans startups to enterprises, crafting custom websites that excel in aesthetics and performance. We leverage cutting-edge technology for outstanding online experiences
         </p>
       </div>
       <div>
         <motion.div
           ref={ref}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"} // Use isInView instead of inView
+          animate={isInView ? "visible" : "hidden"}  
           variants={iconVariants}
           transition={{ duration: 0.5 }}
         >
@@ -88,19 +80,19 @@ const Projects = () => {
                   <h2 className="text-xl ">{project.subtitle}</h2>
                   <p className="text-sm opacity-80 ">{project.description}</p>
                   <div className="flex flex-row gap-3 py-3">
-                    <div className="  text-xs font-semibold bg-amber-400 p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50">
+                    <div className="  text-xs font-semibold bg-amber-400 p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50 max-sm:text-[50%]">
                       React
                     </div>
-                    <div className="  text-xs font-semibold bg-emerald-700  p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50">
+                    <div className="  text-xs font-semibold bg-emerald-700  p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50 max-sm:text-[50%]">
                       Taailwind css
                     </div>
-                    <div className="  text-xs font-semibold bg-blue-700   p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50">
+                    <div className="  text-xs font-semibold bg-blue-700   p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50 max-sm:text-[50%]">
                       Material UI
                     </div>
                   </div>
 
                   <a
-                    className="px-2 py-3 bg-[#f5cc99] rounded w-max hover:bg-[#ebb7b2] "
+                    className="px-2 py-2 bg-[#f5cc99] rounded w-max hover:bg-[#ebb7b2] max-sm:text-[80%] "
                     href={project.link}
                     target="-blank"
                   >

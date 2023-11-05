@@ -16,12 +16,13 @@ function App() {
       <Hero />
       <About />
       <Team />
-      <Contact />
+      
       <Projects />
       <Toaster
   position="top-right"
   reverseOrder={false}
 />
+<Contact />
     </>
   )
 }
