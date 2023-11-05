@@ -1,13 +1,25 @@
 import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 import toast  from 'react-hot-toast';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 
 const Contact = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const iconVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
+  
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,6 +40,15 @@ const Contact = () => {
   };
 
   return (
+    <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={iconVariants}
+          transition={{ duration: 0.5 }}
+         >
+ 
+     
     <section className="bg-white dark:bg-gray-900">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Want to start a project ?</h2>
@@ -74,6 +95,7 @@ const Contact = () => {
         </form>
       </div>
     </section>
+    </motion.div>
   );
 };
 
