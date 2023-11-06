@@ -5,6 +5,7 @@ import About from './components/about/about'
 import Team from './components/team/team'
 import Contact from './components/contact/contact'
 import Projects from './components/projects/projects'
+import DW from './components/dark/dark_white' 
 import   { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   reverseOrder={false}
 />
 <Contact />
+<DW />
     </>
   )
 }

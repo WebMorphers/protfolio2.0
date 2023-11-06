@@ -36,7 +36,7 @@ const projects = [
 
 const Projects = () => {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
   });
   const [isInView, setIsInView] = useState(inView);
 
@@ -69,7 +69,7 @@ const Projects = () => {
           variants={iconVariants}
           transition={{ duration: 0.5 }}
         >
-          <div className="grid md:grid-cols-2 xl:gap-20 gap-20 md:gap-10 md:m-16 p-8 lg:m-24 m-8 ">
+          <div className="grid md:grid-cols-2 xl:gap-20 gap-20 md:gap-10 md:m-16  px-8 md:px-36    lg:m-24 m-8 ">
             {projects.map((project) => (
               <div className="flex flex-col px-4 md:px-10 py-3 rounded-xl shadow-2xl items-center gap-5 hover:bg-gray-400 cursor-pointer">
                 <div>

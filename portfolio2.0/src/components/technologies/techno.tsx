@@ -5,7 +5,7 @@ import './techno.css'
 const techno = () => {
   
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
   });
 
   const iconVariants = {
@@ -14,7 +14,7 @@ const techno = () => {
   };
   return (
     <div className="flex flex-col justify-center items-center gap-20  ">
-    <h1 className="text-4xl">Technologies we use</h1>
+    <h1 className="text-4xl max-md:text-3xl">Technologies we use</h1>
     <div className='flex flex-wrap md:max-w-md gap-12 items-center justify-center'>
     <motion.div
           ref={ref}

@@ -5,7 +5,7 @@ import Tech from "../technologies/techno"
 
 const about = () => {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,  
   });
 
   const iconVariants = {
@@ -25,7 +25,7 @@ const about = () => {
     <div className='flex px-24 max-sm:px-12 flex-wrap py-24 justify-center items-center gap-32 bg-[#f9f9f9]  '>
         <div className='flex flex-col lg:max-w-md gap-9 '> 
         <h1 className="text-4xl font-bold text-center">About Us</h1>
-        <p id="tt" className="text-xl max-w-4xl  text-center "> 
+        <p id="tt" className="text-xl max-w-4xl max-md:text-md  text-center "> 
         We are a dynamic duo of experienced  <span className="keyword">software developers</span> , 
         specializing in web development. With expertise in <span className="keyword">React JS,
          TypeScript, and Tailwind CSS </span>, we excel in creating <span className="keyword">responsive landing pages </span> 

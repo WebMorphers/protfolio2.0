@@ -1,9 +1,27 @@
  import './hero.css'
  import Links from "../Links/Links"
+ import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 const hero = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,  
+  });
+
+  const iconVariants = {
+    hidden: { opacity: 0, y:  80 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
+    <motion.div
+    ref={ref}
+    initial="hidden"
+    animate={inView ? "visible" : "hidden"}
+    variants={iconVariants}
+    transition={{ duration: 0.5 }}
+   >
+    
     <div className='flex flex-col justify-center items-center py-28'>
 
 <div className='flex gap-32 justify-center max-md:flex-col '>
@@ -28,6 +46,7 @@ const hero = () => {
 <div> <Links/></div>
       
        </div>
+       </motion.div>
   )
 }
 

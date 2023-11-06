@@ -1,4 +1,6 @@
 import "./footer.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn , faXTwitter ,faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   const email = "WebMorphers@gmail.com";
@@ -10,30 +12,22 @@ const Footer = () => {
           href="https://www.linkedin.com/company/webmorphers/about/"
           className="text-xl"
         >
-          <i
-            className="fab fa-linkedin-in fa-beat"
-            style={{ color: "#ffffff", width: "17px", height: "17px" }}
-          ></i>
+              <FontAwesomeIcon icon={faLinkedinIn} beat style={{color: "#ffffff",}} />
+
         </a>
         <a
           target="_blank"
           href="https://twitter.com/WebMorphers"
           className="text-xl"
         >
-          <i
-            className="fa-brands fa-x-twitter fa-beat"
-            style={{ color: "#ffffff", width: "17px", height: "17px" }}
-          ></i>
+          <FontAwesomeIcon icon={faXTwitter} beat style={{color: "#ffffff",}} />
         </a>
         <a
           target="_blank"
           href="https://www.instagram.com/webmorphers/"
           className="text-xl"
         >
-          <i
-            className="fa-brands fa-instagram fa-beat"
-            style={{ color: "#ffffff", width: "17px", height: "17px" }}
-          ></i>
+          <FontAwesomeIcon icon={faInstagram} beat style={{color: "#ffffff",}} />
         </a>
       </div>
       <div className="text-xl text-center md:text-left mb-4 md:mb-0">

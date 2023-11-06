@@ -1,7 +1,24 @@
 import "./Links.css";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Links = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,  
+  });
+
+  const iconVariants = {
+    hidden: { opacity: 0, y: -80 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
+    <motion.div
+    ref={ref}
+    initial="hidden"
+    animate={inView ? "visible" : "hidden"}
+    variants={iconVariants}
+    transition={{ duration: 0.5 }}
+   >
     <div className="flex flex-row mt-[10%] sm:px-14 flex-wrap items-center xs:ml-[30%] wra justify-center gap-x-20">
       <a
         target="_blank"
@@ -57,6 +74,7 @@ const Links = () => {
         </svg>
       </a>
     </div>
+    </motion.div>
   );
 };
 
