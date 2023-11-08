@@ -74,7 +74,10 @@ const Navbar = () => {
       </ul>
 
       <div onClick={chang} className="block md:hidden">
-        <div className="flex flex-row gap-3">
+        <div className="flex flex-row gap-5 justify-center items-center">
+        <div>
+            <DW />
+          </div>
           <div>
             {nav ? (
               <AiOutlineClose size={20} color={"black"} />
@@ -82,9 +85,7 @@ const Navbar = () => {
               <AiOutlineMenu size={20} color={"black"} />
             )}
           </div>
-          <div>
-            <DW />
-          </div>
+          
         </div>
       </div>
       <ul
