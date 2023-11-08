@@ -13,8 +13,8 @@ const techno = () => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <div className="flex flex-col justify-center items-center gap-20  ">
-    <h1 className="text-4xl max-md:text-3xl">Technologies we use</h1>
+    <div className="flex flex-col justify-center items-center gap-20 twu  ">
+    <h1 className="text-4xl max-md:text-3xl ">Technologies we use</h1>
     <div className='flex flex-wrap md:max-w-md gap-12 items-center justify-center'>
     <motion.div
           ref={ref}

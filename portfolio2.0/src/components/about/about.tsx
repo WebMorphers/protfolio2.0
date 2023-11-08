@@ -22,7 +22,7 @@ const about = () => {
    >
  
 
-    <div className='flex px-24 max-sm:px-12 flex-wrap py-24 justify-center items-center gap-32 bg-[#f9f9f9]  '>
+    <div className='flex px-24 max-sm:px-12 flex-wrap py-24 justify-center items-center gap-32  aboutus '>
         <div className='flex flex-col lg:max-w-md gap-9 '> 
         <h1 className="text-4xl font-bold text-center">About Us</h1>
         <p id="tt" className="text-xl max-w-4xl max-md:text-md  text-center "> 

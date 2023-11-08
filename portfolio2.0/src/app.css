@@ -1,8 +1,90 @@
 #dark{
     background-color: rgb(56, 56, 56);
-    color:whitesmoke;
 }
-#light{
-    background-color: rgb(255, 255, 255);
-    color:black;
+/* Navbar dark */
+#dark .navbarc {
+  background-color: rgb(56, 56, 56);
+  color: whitesmoke;
 }
+
+/* Hero dark */
+#dark .hero {
+  background-color: rgb(56, 56, 56);
+}
+#dark .scroll-icon {
+  border: 0.25em solid #fff;
+}
+
+#dark .scroll-icon__dot {
+  border: 0.25em solid #fff;
+}
+
+#light .hwr {
+  color: #909090;
+}
+
+#dark .hwr {
+  color: #efefef;
+}
+#dark .atowd {
+  color: #efefef;
+}
+
+/* Links dark */
+#light .links {
+  color: #757575;
+}
+#light .links:hover {
+  color: #212121;
+}
+#dark .links {
+  color: #9E9E9E ;
+}
+
+#dark .links:hover {
+  color: #424242 ;
+}
+/* about dark */
+
+#dark .twu {
+  color: #efefef;
+  background-color: #424242; 
+}
+
+#light .aboutus{  
+  background-color: #f9f9f9; 
+}
+#dark .aboutus{  
+    color: #efefef;
+    background-color: #424242; 
+
+}
+#dark .keyword{  
+     color: #2196F3;
+
+ }
+
+ /* team dark */
+  
+ #light .grey900{  
+    color: #212121; 
+ }
+ #light .grey600    {  
+     color: #757575; 
+ }
+ #dark .team{  
+    background-color: rgb(56, 56, 56);
+ }
+
+ #dark .grey900{  
+    color: #9E9E9E; 
+ }
+ #dark .grey600    {  
+    color: #BDBDBD; 
+ }
+ #light .fc{
+    color: #3949AB; 
+ }
+ #dark .fc{
+    color: #B39DDB; 
+ }
