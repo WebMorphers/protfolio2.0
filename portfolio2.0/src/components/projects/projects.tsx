@@ -51,7 +51,7 @@ const Projects = () => {
     }
   }, [isInView, inView]);
   return (
-    <div className="lg:py-[10%]  container mx-auto bg-[#f9f9f9] pt-20 flex items-center justify-center flex-col min-w-full ">
+    <div className="lg:py-[10%] container mx-auto bg-[#f9f9f9] pt-20 flex items-center justify-center flex-col min-w-full ">
       <h1 className="max-sm:text-[50px] sm:text-[80px] md:text-[66px]">Projects</h1>
       <div
         className="mt-4 line-height-18 word-spacing-4px px-[12%] align-center justify-center text-center"
@@ -69,7 +69,7 @@ const Projects = () => {
           variants={iconVariants}
           transition={{ duration: 0.5 }}
         >
-          <div className="grid md:grid-cols-2 xl:gap-20 gap-20 md:gap-10 md:m-16  px-8 md:px-36    lg:m-24 m-8 ">
+          <div className="grid md:grid-cols-2 xl:gap-20 gap-20 md:gap-10 md:m-16  px-8      lg:m-24 m-8 ">
             {projects.map((project) => (
               <div className="flex flex-col px-4 md:px-10 py-3 rounded-xl shadow-2xl items-center gap-5 hover:bg-gray-400 cursor-pointer">
                 <div>

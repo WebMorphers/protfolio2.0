@@ -1,15 +1,18 @@
+import  { useContext  } from 'react';
 
 import "./dark_white.css"
-import { useTheme } from '../ThemeContext';
+import { ThemeContext  } from "../../App"
+
+
  
 const dark_white = () => {
-  const { isDarkTheme, toggleTheme } = useTheme();
 
-     
-     
+  const { theme, toggletheme } = useContext(ThemeContext);
+
+  
     return (
-      <label className="theme-switch fixed bottom-10 right-10">
-  <input type="checkbox" onChange={toggleTheme} className="theme-switch__checkbox"></input>
+      <label className="theme-switch ">
+  <input type="checkbox" onChange={toggletheme}   className="theme-switch__checkbox"></input>
   <div className="theme-switch__container">
     <div className="theme-switch__clouds"></div>
     <div className="theme-switch__stars-container">
@@ -26,8 +29,7 @@ const dark_white = () => {
         </div>
       </div>
     </div>
-  </div>
-  
+  </div> 
 </label>
   )
 }

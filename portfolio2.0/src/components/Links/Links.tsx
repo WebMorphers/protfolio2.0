@@ -22,7 +22,7 @@ const Links = () => {
     <div className="flex flex-row mt-[10%] sm:px-14 flex-wrap items-center xs:ml-[30%] wra justify-center gap-x-20">
       <a
         target="_blank"
-        className="text-gray-600 hover:text-gray-900"
+        className="  hover:text-gray-900"
         href="https://github.com/WebMorphers"
       >
         <svg
@@ -30,7 +30,7 @@ const Links = () => {
           height="150"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-28 md:w-52 h-24 md:h-32 text-gray-600 hover:text-gray-900"
+          className="w-28 md:w-52 h-24 md:h-32  hover:text-gray-900"
         >
           <path
             fill="currentColor"
