@@ -2,8 +2,7 @@ import "./Navbar.css";
 import logo from "../../assets/nobg_logo.png";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import DW from '../dark/dark_white' 
-
+import DW from "../dark/dark_white";
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -15,7 +14,7 @@ const Navbar = () => {
     if (section) {
       window.scrollTo({
         top: section.offsetTop,
-        behavior: "smooth",  
+        behavior: "smooth",
       });
     }
   };
@@ -33,14 +32,17 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div id="nav" className="flex w-full  top-0  justify-between items-center h-24 mx-auto px-4  navbarc">
+    <div
+      id="nav"
+      className="flex w-full  top-0  justify-between items-center h-24 mx-auto px-4  navbarc"
+    >
       <a href="#" onClick={() => scrollToSection("hello")}>
-          <img className="h-20 w-23" src={logo} alt="" />
-        </a>
+        <img className="h-20 w-23" src={logo} alt="" />
+      </a>
       <ul className="hidden md:flex">
         <li className="p-4">
           <a
-            className="no-underline mx-4 cursor-pointer font-normal  hover:text-orange-600 "
+            className="no-underline mx-4 cursor-pointer font-normal hover:text-orange-600 "
             onClick={() => scrollToSection("about_us")}
             href="#about_us"
           >
@@ -49,7 +51,7 @@ const Navbar = () => {
         </li>
         <li className="p-4">
           <a
-            className="no-underline mx-4 cursor-pointer font-normal   hover:text-orange-600"
+            className="no-underline mx-4 cursor-pointer font-normal  hover:text-orange-600"
             onClick={() => scrollToSection("projects")}
             href="#projects"
           >
@@ -59,23 +61,31 @@ const Navbar = () => {
         <li className="p-4">
           {" "}
           <a
-            className="no-underline mx-4 cursor-pointer font-normal	  hover:text-orange-600"
+            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-orange-600"
             onClick={() => scrollToSection("contact")}
             href="#contact"
           >
             CONTACT US
           </a>
         </li>
-        <li className="p-4"><DW />
-</li>
+        <li className="p-4">
+          <DW />
+        </li>
       </ul>
-       
+
       <div onClick={chang} className="block md:hidden">
-        {nav ? (
-          <AiOutlineClose size={20} color={"black"} />
-        ) : (
-          <AiOutlineMenu size={20} color={"black"} />
-        )}
+        <div className="flex flex-row gap-3">
+          <div>
+            {nav ? (
+              <AiOutlineClose size={20} color={"black"} />
+            ) : (
+              <AiOutlineMenu size={20} color={"black"} />
+            )}
+          </div>
+          <div>
+            <DW />
+          </div>
+        </div>
       </div>
       <ul
         className={
@@ -84,7 +94,7 @@ const Navbar = () => {
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
-         <a href="#" onClick={() => scrollToSection("hello")}>
+        <a href="#" onClick={() => scrollToSection("hello")}>
           <img className="h-20 w-23" src={logo} alt="" />
         </a>
         <li className="p-4 ">
