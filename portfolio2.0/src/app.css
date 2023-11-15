@@ -88,3 +88,63 @@
  #dark .fc{
     color: #B39DDB; 
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer dark */
+  #light .footeer{
+    background-color: #000000; 
+ }
+ #dark .footeer{
+  background-color: #807d7d; 
+  color:#000000;
+}
+#light .iconss{
+  color: #fff; 
+}
+#dark .iconss{ 
+color:#000000;
+}

@@ -5,14 +5,14 @@ import { faLinkedinIn , faXTwitter ,faInstagram } from '@fortawesome/free-brands
 const Footer = () => {
   const email = "WebMorphers@gmail.com";
   return (
-    <div className="bg-black text-white py-4 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-between">
+    <div className="footeer text-white py-4 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-between">
       <div className="flex gap-8 mb-4 md:mb-0">
         <a
           target="_blank"
           href="https://www.linkedin.com/company/webmorphers/about/"
           className="text-xl"
         >
-              <FontAwesomeIcon icon={faLinkedinIn} beat style={{color: "#ffffff",}} />
+              <FontAwesomeIcon className="iconss" icon={faLinkedinIn} beat  />
 
         </a>
         <a
@@ -20,14 +20,14 @@ const Footer = () => {
           href="https://twitter.com/WebMorphers"
           className="text-xl"
         >
-          <FontAwesomeIcon icon={faXTwitter} beat style={{color: "#ffffff",}} />
+          <FontAwesomeIcon className="iconss" icon={faXTwitter} beat  />
         </a>
         <a
           target="_blank"
           href="https://www.instagram.com/webmorphers/"
           className="text-xl"
         >
-          <FontAwesomeIcon icon={faInstagram} beat style={{color: "#ffffff",}} />
+          <FontAwesomeIcon className="iconss" icon={faInstagram} beat   />
         </a>
       </div>
       <div className="text-xl text-center md:text-left mb-4 md:mb-0">
