@@ -7,7 +7,7 @@ const dark_white = () => {
   const { theme, toggletheme } = useContext(ThemeContext);
 
   return (
-    <label className="theme-switch rotate-90   ">
+    <label className="theme-switch rotate-90" id={theme}>
       <input
         type="checkbox"
         onChange={toggletheme}
