@@ -38,7 +38,7 @@ const Footer = () => {
           className="far fa-envelope"
           style={{ color: "#ffffff", width: "17px", height: "17px" }}
         ></i>
-        <a className="text-xl hover:text-yellow-400" href={`mailto:${email}`}>
+        <a className="text-xl hover:text-yellow-400" href={`mailto:${email}`} target="_blank">
           {email}
         </a>
       </div>

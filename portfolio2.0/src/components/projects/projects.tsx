@@ -2,6 +2,7 @@ import "./Projects.css";
 import Nexcent from "../../assets/nexcent.png";
 import Notapark from "../../assets/notapark.png";
 import Comptoir from "../../assets/Screenshot_4.png";
+import smokey from "../../assets/smokeybrgr.png";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -32,6 +33,14 @@ const projects = [
       "Responsive Landing  Page  | brand website  |  bakery website   ",
     link: "https://comptoir-sucre.vercel.app",
   },
+  {
+    img: smokey,
+    title: "Smoky Burgers",
+    subtitle: "Burgers website ",
+    description:
+      "Responsive Landing  Page  | brand website  |  Burgers website   ",
+    link: "https://smoky-burgers.vercel.app",
+  },
 ];
 
 const Projects = () => {
@@ -52,7 +61,7 @@ const Projects = () => {
   }, [isInView, inView]);
 
   return (
-    <div className="lg:py-[10%] container mx-auto projectscls pt-20 flex items-center justify-center flex-col min-w-full">
+    <div className="lg:py-[10%] container mx-auto projectscls pt-20 flex items-center justify-center flex-col min-w-full" id="projects">
       <h1 className="max-sm:text-[50px] sm:text-[80px] md:text-[66px]">Projects</h1>
       <div
         className="mt-4 line-height-18 word-spacing-4px px-[12%] align-center justify-center text-center"

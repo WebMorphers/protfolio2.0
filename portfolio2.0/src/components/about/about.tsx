@@ -19,6 +19,7 @@ const about = () => {
     animate={inView ? "visible" : "hidden"}
     variants={iconVariants}
     transition={{ duration: 0.5 }}
+    id="about"
    >
  
 

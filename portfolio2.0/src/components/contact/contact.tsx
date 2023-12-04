@@ -49,6 +49,7 @@ const Contact = () => {
       animate={inView ? "visible" : "hidden"}
       variants={iconVariants}
       transition={{ duration: 0.5 }}
+      id="contact"
     >
       <section className="bg-white dark:bg-[#7081decb]">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">

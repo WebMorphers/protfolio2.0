@@ -36,15 +36,15 @@ const Navbar = () => {
       id="nav"
       className="flex w-full  top-0  justify-between items-center h-24 mx-auto px-4  navbarc"
     >
-      <a href="#" onClick={() => scrollToSection("hello")}>
+      <a href="/">
         <img className="h-20 w-23" src={logo} alt="" />
       </a>
       <ul className="hidden md:flex">
         <li className="p-4">
           <a
             className="no-underline mx-4 cursor-pointer font-normal hover:text-orange-600 "
-            onClick={() => scrollToSection("about_us")}
-            href="#about_us"
+            onClick={() => scrollToSection("about")}
+            href="#about"
           >
             ABOUT US
           </a>
@@ -95,14 +95,14 @@ const Navbar = () => {
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
-        <a href="#" onClick={() => scrollToSection("hello")}>
+        <a href="/" >
           <img className="h-20 w-23" src={logo} alt="" />
         </a>
         <li className="p-4 ">
           <a
             className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600"
-            onClick={() => scrollToSection("about_us")}
-            href="#about_us"
+            onClick={() => {chang() ,scrollToSection("about")}}
+            
           >
             ABOUT US
           </a>
@@ -110,8 +110,7 @@ const Navbar = () => {
         <li className="p-4">
           <a
             className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600 "
-            onClick={() => scrollToSection("projects")}
-            href="#projects"
+            onClick={() => {chang() ,scrollToSection("projects")}}
           >
             OUR PROJECTS
           </a>
@@ -120,8 +119,7 @@ const Navbar = () => {
           {" "}
           <a
             className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600 "
-            onClick={() => scrollToSection("contact")}
-            href="#contact"
+            onClick={() => {chang() ,scrollToSection("contact")}}
           >
             CONTACT US
           </a>
