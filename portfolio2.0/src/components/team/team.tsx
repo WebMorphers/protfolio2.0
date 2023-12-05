@@ -29,8 +29,10 @@ const team = () => {
                 Meet our leadership
               </h2>
               <p className="mt-6 text-lg leading-8 grey600">
-                Libero fames augue nisl porttitor nisi, quis. Id ac elit odio
-                vitae elementum enim vitae ullamcorper suspendisse.
+                Webmorphers, a dynamic duo of passionate computer science
+                engineering students, specialize in crafting cutting-edge
+                websites using React and Tailwind CSS . With a shared commitment
+                to excellence,
               </p>
             </div>
 
@@ -38,32 +40,50 @@ const team = () => {
               role="list"
               className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
             >
-              <li>
-                <div className="flex items-center gap-x-6">
-                  <img className="h-16 w-16 rounded-full" src={moncef} alt="" />
-                  <div>
-                    <h3 className="text-base font-semibold leading-7 tracking-tight grey900">
-                      Monsif Souri
-                    </h3>
-                    <p className="text-sm font-semibold leading-6 fc">
-                      Founder
-                    </p>
+              <a
+                href="https://www.linkedin.com/in/monsif-souri-1b9a2a206/"
+                target="_blank"
+              >
+                <li>
+                  <div className="flex items-center gap-x-6">
+                    <img
+                      className="h-16 w-16 rounded-full"
+                      src={moncef}
+                      alt=""
+                    />
+                    <div>
+                      <h3 className="text-base font-semibold leading-7 tracking-tight grey900">
+                        Monsif Souri
+                      </h3>
+                      <p className="text-sm font-semibold leading-6 fc">
+                        Founder
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center gap-x-6">
-                  <img className="h-16 w-16 rounded-full" src={othman} alt="" />
-                  <div>
-                    <h3 className="text-base font-semibold leading-7 tracking-tight grey900">
-                      Othman Sohab
-                    </h3>
-                    <p className="text-sm font-semibold leading-6 fc">
-                      Co-Founder / CEO
-                    </p>
+                </li>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/othman-sohab/"
+                target="_blank"
+              >
+                <li>
+                  <div className="flex items-center gap-x-6">
+                    <img
+                      className="h-16 w-16 rounded-full"
+                      src={othman}
+                      alt=""
+                    />
+                    <div>
+                      <h3 className="text-base font-semibold leading-7 tracking-tight grey900">
+                        Othman Sohab
+                      </h3>
+                      <p className="text-sm font-semibold leading-6 fc">
+                        Co-Founder / CEO
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </li>
+                </li>
+              </a>
             </ul>
           </div>
         </div>

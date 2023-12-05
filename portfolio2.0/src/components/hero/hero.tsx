@@ -27,12 +27,12 @@ const hero = () => {
 <div className='flex gap-32 justify-center max-md:flex-col '>
    <div className='flex flex-col justify-center items-center'>
       <p className='font-bold mb-4 text-3xl lg:text-7xl '> 
-        <p className='text-[#efefef] text-[50%] flex items-center justify-center hwr  ' >Hello We Are</p>
+        <p className='text-[#efefef] text-[50%] flex items-center justify-center hwr max-md:text-3xl max-lg:text-4xl  ' >Hello We Are</p>
           <br />
           <span className=" font-serif flex text-center uppercase tracking-[5px] md:tracking-[10px] lg:tracking-[15px] felx justify-center items-center" id="span">
             WebMorphers
           </span><br />
-          <p className='mt-8 atowd' >  A Team Of Web Developers</p>
+          <p className='mt-8 atowd max ' >  A Team Of Web Developers</p>
       </p>
    </div>
    <div>
