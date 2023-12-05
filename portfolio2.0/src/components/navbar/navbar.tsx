@@ -2,8 +2,7 @@ import "./Navbar.css";
 import logo from "../../assets/nobg_logo.png";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Link, animateScroll as scroll } from "react-scroll";
-import DW from "../dark/dark_white";
+ import DW from "../dark/dark_white";
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
