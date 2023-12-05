@@ -1,7 +1,8 @@
 import "./Navbar.css";
 import logo from "../../assets/nobg_logo.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link, animateScroll as scroll } from "react-scroll";
 import DW from "../dark/dark_white";
 
 const Navbar = () => {
@@ -9,27 +10,6 @@ const Navbar = () => {
   function chang() {
     setnav(!nav);
   }
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-  useEffect(() => {
-    const internalLinks = document.querySelectorAll('a[href^="#"]');
-    internalLinks.forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute("href")?.slice(1);
-        if (targetId) {
-          scrollToSection(targetId);
-        }
-      });
-    });
-  }, []);
 
   return (
     <div
@@ -42,28 +22,37 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         <li className="p-4">
           <a
-            className="no-underline mx-4 cursor-pointer font-normal hover:text-orange-600 "
-            onClick={() => scrollToSection("about")}
-            href="#about"
+            className="no-underline mx-4 cursor-pointer font-normal hover:text-orange-600"
+            onClick={(e: React.MouseEvent) => {
+              e.preventDefault();
+              const aboutSection = document.getElementById("about");
+              aboutSection?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             ABOUT US
           </a>
         </li>
+
         <li className="p-4">
           <a
-            className="no-underline mx-4 cursor-pointer font-normal  hover:text-orange-600"
-            onClick={() => scrollToSection("projects")}
-            href="#projects"
+            className="no-underline mx-4 cursor-pointer font-normal hover:text-orange-600"
+            onClick={(e: React.MouseEvent) => {
+              e.preventDefault();
+              const aboutSection = document.getElementById("projects");
+              aboutSection?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             OUR PROJECTS
           </a>
         </li>
         <li className="p-4">
-          {" "}
           <a
-            className="no-underline mx-4 cursor-pointer font-normal	 hover:text-orange-600"
-            onClick={() => scrollToSection("contact")}
-            href="#contact"
+            className="no-underline mx-4 cursor-pointer font-normal hover:text-orange-600"
+            onClick={(e: React.MouseEvent) => {
+              e.preventDefault();
+              const aboutSection = document.getElementById("contact");
+              aboutSection?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             CONTACT US
           </a>
@@ -75,7 +64,7 @@ const Navbar = () => {
 
       <div onClick={chang} className="block md:hidden">
         <div className="flex flex-row gap-5 justify-center items-center">
-        <div>
+          <div>
             <DW />
           </div>
           <div>
@@ -85,7 +74,6 @@ const Navbar = () => {
               <AiOutlineMenu size={20} color={"black"} />
             )}
           </div>
-          
         </div>
       </div>
       <ul
@@ -95,22 +83,32 @@ const Navbar = () => {
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
-        <a href="/" >
+        <a href="/">
           <img className="h-20 w-23" src={logo} alt="" />
         </a>
-        <li className="p-4 ">
+        <li className="p-4">
           <a
-            className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600"
-            onClick={() => {chang() ,scrollToSection("about")}}
-            
+            className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600 "
+            onClick={(e: React.MouseEvent) => {
+              e.preventDefault();
+              const aboutSection = document.getElementById("about");
+              aboutSection?.scrollIntoView({ behavior: "smooth" });
+              chang();
+            }}
           >
             ABOUT US
           </a>
         </li>
+
         <li className="p-4">
           <a
             className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600 "
-            onClick={() => {chang() ,scrollToSection("projects")}}
+            onClick={(e: React.MouseEvent) => {
+              e.preventDefault();
+              const aboutSection = document.getElementById("projects");
+              aboutSection?.scrollIntoView({ behavior: "smooth" });
+              chang();
+            }}
           >
             OUR PROJECTS
           </a>
@@ -119,7 +117,12 @@ const Navbar = () => {
           {" "}
           <a
             className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600 "
-            onClick={() => {chang() ,scrollToSection("contact")}}
+            onClick={(e: React.MouseEvent) => {
+              e.preventDefault();
+              const aboutSection = document.getElementById("contact");
+              aboutSection?.scrollIntoView({ behavior: "smooth" });
+              chang();
+            }}
           >
             CONTACT US
           </a>
