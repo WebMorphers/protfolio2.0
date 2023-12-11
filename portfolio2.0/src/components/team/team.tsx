@@ -2,6 +2,7 @@ import moncef from "../../assets/WhatsApp Image 2023-10-09 at 22.14.21 (1).png";
 import othman from "../../assets/Screenshot_1.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import '../about/about.css'
 
 const team = () => {
   const [ref, inView] = useInView({
@@ -23,8 +24,8 @@ const team = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="  py-24 sm:py-32 team">
-          <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-            <div className="max-w-2xl">
+          <div className="mx-auto grid  max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+            <div className="max-w-2xl col text-center" id="tt" >
               <h2 className="text-3xl font-bold tracking-tight grey900 sm:text-4xl ">
                 Meet our leadership
               </h2>
@@ -35,17 +36,17 @@ const team = () => {
                 to excellence,
               </p>
             </div>
-
+            <div className="flex items-center col-span-2">
             <ul
               role="list"
-              className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+              className="grid w-full lg:px-9 gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
             >
               <a
                 href="https://www.linkedin.com/in/monsif-souri-1b9a2a206/"
                 target="_blank"
               >
                 <li>
-                  <div className="flex items-center gap-x-6">
+                  <div className="flex items-center justify-center gap-x-6">
                     <img
                       className="h-16 w-16 rounded-full"
                       src={moncef}
@@ -85,6 +86,7 @@ const team = () => {
                 </li>
               </a>
             </ul>
+          </div>
           </div>
         </div>
       </motion.div>
