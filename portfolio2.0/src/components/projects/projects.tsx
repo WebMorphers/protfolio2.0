@@ -10,6 +10,22 @@ import { useEffect, useState } from "react";
 
 const projects = [
   {
+    img: smokey,
+    title: "Smoky Burgers",
+    subtitle: "Burgers website ",
+    description:
+      "Responsive Landing  Page  | brand website  |  Burgers website   ",
+    link: "https://smoky-burgers.vercel.app",
+  },
+  {
+    img: Comptoir,
+    title: "Le Comptoir Sucré",
+    subtitle: " bakery website ",
+    description:
+      "Responsive Landing  Page  | brand website  |  bakery website   ",
+    link: "https://comptoir-sucre.vercel.app",
+  },
+  {
     img: Nexcent,
     title: "Nexcent",
     subtitle: "Responsive Landing Page",
@@ -24,22 +40,6 @@ const projects = [
     description:
       "Responsive Landing Page Design | Website Home Page Design | Agency Website UI Design",
     link: "https://notapark.vercel.app/",
-  },
-  {
-    img: Comptoir,
-    title: "Le Comptoir Sucré",
-    subtitle: " bakery website ",
-    description:
-      "Responsive Landing  Page  | brand website  |  bakery website   ",
-    link: "https://comptoir-sucre.vercel.app",
-  },
-  {
-    img: smokey,
-    title: "Smoky Burgers",
-    subtitle: "Burgers website ",
-    description:
-      "Responsive Landing  Page  | brand website  |  Burgers website   ",
-    link: "https://smoky-burgers.vercel.app",
   },
 ];
 
@@ -61,21 +61,29 @@ const Projects = () => {
   }, [isInView, inView]);
 
   return (
-    <div className="lg:py-[10%] container mx-auto projectscls pt-20 flex items-center justify-center flex-col min-w-full" id="projects">
-      <h1 className="max-sm:text-[50px] sm:text-[80px] md:text-[66px]">Projects</h1>
+    <div
+      className="lg:py-[10%] container mx-auto projectscls pt-20 flex items-center justify-center flex-col min-w-full"
+      id="projects"
+    >
+      <h1 className="max-sm:text-[50px] sm:text-[80px] md:text-[66px]">
+        Projects
+      </h1>
       <div
         className="mt-4 line-height-18 word-spacing-4px px-[12%] align-center justify-center text-center"
         id="te"
       >
         <p className="max-sm:text-[18px] sm:text-[20px] md:text-[20px] te">
-        We're an experienced web development team focused on innovation and technical excellence. Our portfolio spans startups to enterprises, crafting custom websites that excel in aesthetics and performance. We leverage cutting-edge technology for outstanding online experiences
+          We're an experienced web development team focused on innovation and
+          technical excellence. Our portfolio spans startups to enterprises,
+          crafting custom websites that excel in aesthetics and performance. We
+          leverage cutting-edge technology for outstanding online experiences
         </p>
       </div>
       <div>
         <motion.div
           ref={ref}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}  
+          animate={isInView ? "visible" : "hidden"}
           variants={iconVariants}
           transition={{ duration: 0.5 }}
         >
