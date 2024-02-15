@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import "./about.css"
-import Tech from "../technologies/techno"
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import "./about.css";
+import Tech from "../technologies/techno";
 
 const about = () => {
   const [ref, inView] = useInView({
-    triggerOnce: false,  
+    triggerOnce: false,
   });
 
   const iconVariants = {
@@ -14,31 +14,57 @@ const about = () => {
   };
   return (
     <motion.div
-    ref={ref}
-    initial="hidden"
-    animate={inView ? "visible" : "hidden"}
-    variants={iconVariants}
-    transition={{ duration: 0.5 }}
-    id="about"
-   >
- 
-
-    <div className='flex px-24 max-sm:px-12 flex-wrap py-24 justify-center items-center gap-32  aboutus '>
-        <div className='flex flex-col lg:max-w-md gap-9 '> 
-        <h1 className="text-4xl font-bold text-center">About Us</h1>
-        <p id="tt" className="text-xl max-w-4xl max-md:text-md  text-center "> 
-        We are a dynamic duo of experienced  <span className="keyword">software developers</span> , 
-        specializing in web development. With expertise in <span className="keyword">React JS,
-         TypeScript, and Tailwind CSS </span>, we excel in creating <span className="keyword">responsive landing pages </span> 
-         and eye-catching <span className="keyword"> splash pages. </span> 
-          Let us bring your web projects to life with our skills and passion for design and functionality.  
-             </p>
-  
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={iconVariants}
+      transition={{ duration: 0.5 }}
+      id="about"
+    >
+      <div className="flex flex-col px-24 max-sm:px-12 flex-wrap py-24 justify-center items-center gap-32  aboutus ">
+        <div className="flex flex-col lg:max-w-md gap-9 ">
+          <h1 className="text-4xl font-bold text-center">About Us</h1>
+          <p id="tt" className="text-xl max-w-7xl max-md:text-md  text-center ">
+            Welcome to our company, the Best provider of
+            <span className="keyword"> B2B web</span> and{" "}
+            <span className="keyword"> mobile</span>
+            solutions utilizing cutting-edge{" "}
+            <span className="keyword"> technologies</span>. We understand how
+            important it is for businesses to{" "}
+            <span className="keyword"> stay ahead</span> of the curve in the
+            rapidly evolving digital world of today. We are committed to
+            assisting businesses in realizing the full potential.. Our{" "}
+            <span className="keyword">experienced developers</span> and{" "}
+            <span className="keyword">designers </span> specialize in creating
+            innovative solutions that are customized to meet the unique
+            requirements of every <span className="keyword"> customer </span>.
+            We pride ourselves on our ability to understand the unique
+            challenges and opportunities presented and use that knowledge to
+            deliver{" "}
+            <span className="keyword">
+              solutions that actually add value to businesses
+            </span>
+            Our <span className="keyword">staff </span> can assist you with
+            streamlining internal procedures, generating new{" "}
+            <span className="keyword"> revenue sources </span>, or simply stay
+            ahead of the competition, We provide a wide range of
+            <span className="keyword"> services </span>, such as continuous
+            <span className="keyword">support</span>,{" "}
+            <span className="keyword"> design</span>,{" "}
+            <span className="keyword"> development</span>, and{" "}
+            <span className="keyword">consulting </span>. If you're ready to
+            take your business to the
+            <span className="keyword"> next level</span> , we invite you to
+            contact us to learn more about how we can help. .
+            <span className="keyword"> </span>
+          </p>
         </div>
-        <div> <Tech /> </div>
-    </div>
+        <div>
+          <Tech />
+        </div>
+      </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default about
+export default about;
