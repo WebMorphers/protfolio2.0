@@ -90,7 +90,7 @@ const Projects = () => {
             {projects.map((project) => (
               <div className="flex flex-col px-4 md:px-10 py-3 rounded-xl shadow-2xl items-center gap-5   cursor-pointer cardss">
                 <div>
-                  <img src={project.img} alt="" />
+                  <img className="grayscale hover:grayscale-0" src={project.img} alt="" />
                 </div>
                 <div className="text-center flex flex-col justify-center lg:px-14 items-center h-full gap-2 te">
                   <h1 className="text-2xl font-semibold">{project.title}</h1>

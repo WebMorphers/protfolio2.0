@@ -27,7 +27,7 @@ const about = () => {
           <p id="tt" className="text-xl max-md:text-md  text-center ">
             Welcome to our company, the Best provider of
             <span className="keyword"> B2B web</span> and{" "}
-            <span className="keyword"> mobile</span>
+            <span className="keyword"> mobile </span>
             solutions utilizing cutting-edge{" "}
             <span className="keyword"> technologies</span>. We understand how
             important it is for businesses to{" "}
