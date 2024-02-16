@@ -22,9 +22,9 @@ const about = () => {
       id="about"
     >
       <div className="flex flex-col px-24 max-sm:px-12 flex-wrap py-24 justify-center items-center gap-32  aboutus ">
-        <div className="flex flex-col lg:max-w-md gap-9 ">
-          <h1 className="text-4xl font-bold text-center">About Us</h1>
-          <p id="tt" className="text-xl max-w-7xl max-md:text-md  text-center ">
+        <div className="flex flex-col  gap-9 ">
+        <h1 className="text-4xl max-md:text-3xl text-center">About Us</h1>
+          <p id="tt" className="text-xl max-md:text-md  text-center ">
             Welcome to our company, the Best provider of
             <span className="keyword"> B2B web</span> and{" "}
             <span className="keyword"> mobile</span>
@@ -33,8 +33,10 @@ const about = () => {
             important it is for businesses to{" "}
             <span className="keyword"> stay ahead</span> of the curve in the
             rapidly evolving digital world of today. We are committed to
-            assisting businesses in realizing the full potential.. Our{" "}
-            <span className="keyword">experienced developers</span> and{" "}
+            assisting businesses in realizing the full potential.
+            <br />
+            <br />
+            Our{" "}<span className="keyword">experienced developers</span> and{" "}
             <span className="keyword">designers </span> specialize in creating
             innovative solutions that are customized to meet the unique
             requirements of every <span className="keyword"> customer </span>.
@@ -44,6 +46,9 @@ const about = () => {
             <span className="keyword">
               solutions that actually add value to businesses
             </span>
+            <br />
+            <br />
+            <div className="hidden sm:block">
             Our <span className="keyword">staff </span> can assist you with
             streamlining internal procedures, generating new{" "}
             <span className="keyword"> revenue sources </span>, or simply stay
@@ -52,11 +57,16 @@ const about = () => {
             <span className="keyword">support</span>,{" "}
             <span className="keyword"> design</span>,{" "}
             <span className="keyword"> development</span>, and{" "}
-            <span className="keyword">consulting </span>. If you're ready to
+            <span className="keyword">consulting </span>.
+            <br />
+            </div>
+             If you're ready to
             take your business to the
             <span className="keyword"> next level</span> , we invite you to
             contact us to learn more about how we can help. .
             <span className="keyword"> </span>
+            <br /> <br />
+            <a href="#contact" className=" p-4 bg-slate-400 rounded-xl hover:bg-slate-500 shadow-xl hover:scale-125">Contact US</a>
           </p>
         </div>
         <div>

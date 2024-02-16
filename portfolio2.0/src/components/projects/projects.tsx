@@ -65,8 +65,7 @@ const Projects = () => {
       className="lg:py-[10%] container mx-auto projectscls pt-20 flex items-center justify-center flex-col min-w-full"
       id="projects"
     >
-      <h1 className="max-sm:text-[50px] sm:text-[80px] md:text-[66px]">
-        Projects
+<h1 className="max-sm:text-[50px] sm:text-[80px] md:text-[66px] max-md:text-3xl text-center">        Projects
       </h1>
       <div
         className="mt-4 line-height-18 word-spacing-4px px-[12%] align-center justify-center text-center"
