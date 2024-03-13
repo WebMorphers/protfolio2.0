@@ -24,7 +24,7 @@ const team = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="  py-24 sm:py-32 team">
-        <h1 className="text-4xl max-md:text-3xl text-center">Meet our leadership
+        <h1 className="text-4xl max-md:text-3xl text-center meetlader">Meet our leadership
           </h1>
           <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2 py-10">
             <div className="flex items-center col-span-2">
@@ -64,7 +64,7 @@ const team = () => {
                         Othman Sohab
                       </h3>
                       <p className="text-sm font-semibold leading-6 fc">
-                        Co-Founder / CEO
+                      Founder
                       </p>
                     </div>
                   </div>

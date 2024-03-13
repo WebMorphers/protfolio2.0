@@ -3,10 +3,28 @@ import Nexcent from "../../assets/nexcent.png";
 import Notapark from "../../assets/notapark.png";
 import Comptoir from "../../assets/Screenshot_4.png";
 import smokey from "../../assets/smokeybrgr.png";
+import Gondif1 from "../../assets/gondifpwa1.png";
+import Gondif2 from "../../assets/gondifpwa2.png";
+import Gondif3 from "../../assets/gondifpwa3.png";
+import Gondif4 from "../../assets/gondifpwa4.png";
+import Gondif5 from "../../assets/gondifpwa5.png";
+
+
+
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
+
 
 const projects = [
   {
@@ -65,7 +83,7 @@ const Projects = () => {
       className="lg:py-[10%] container mx-auto projectscls pt-20 flex items-center justify-center flex-col min-w-full"
       id="projects"
     >
-<h1 className="max-sm:text-[50px] sm:text-[80px] md:text-[66px] max-md:text-3xl text-center">        Projects
+<h1 className="max-sm:text-[50px] sm:text-[80px] md:text-[66px] max-md:text-3xl text-center meetlader">        Projects
       </h1>
       <div
         className="mt-4 line-height-18 word-spacing-4px px-[12%] align-center justify-center text-center"
@@ -87,10 +105,51 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="grid md:grid-cols-2 xl:gap-20 gap-20 md:gap-10 md:m-16 px-8 lg:m-24 m-8 ">
+          <div className="flex flex-col px-4 md:px-10 py-3 rounded-xl shadow-2xl items-center gap-5   cursor-pointer cardss">
+                <div>
+                <Carousel>
+<CarouselContent className="">
+    <CarouselItem><img className="" src={Gondif1} alt="" /></CarouselItem>
+    <CarouselItem><img className="" src={Gondif2} alt="" /></CarouselItem>
+    <CarouselItem><img className="" src={Gondif3} alt="" /></CarouselItem>
+    <CarouselItem><img className="" src={Gondif4} alt="" /></CarouselItem>
+    <CarouselItem><img className="" src={Gondif5} alt="" /></CarouselItem>
+
+  </CarouselContent>
+  <CarouselPrevious className="absolute left-[3%]" />
+  <CarouselNext className="absolute right-[3%]" />
+</Carousel>
+
+                  
+                </div>
+                <div className="text-center flex flex-col justify-center lg:px-14 items-center h-full gap-2  ">
+                  <h1 className="text-2xl font-semibold"></h1>
+                  <h2 className="text-xl font-bold  meetlader"> Comming soon</h2>
+                  <p className="text-sm opacity-80 "></p>
+                  <div className="flex flex-row gap-3 py-3 flex-wrap justify-center items-center  ">
+                    <div className="  text-xs font-semibold bg-amber-400 p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50 max-sm:text-[50%]">
+                      Next js
+                    </div>
+                    <div className="  text-xs font-semibold bg-emerald-700  p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50 max-sm:text-[50%]">
+                      Taailwind css
+                    </div>
+                    <div className="  text-xs font-semibold bg-blue-700   p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50 max-sm:text-[50%]">
+                      Material UI
+                    </div>
+                    <div className="  text-xs font-semibold bg-red-700  p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50 max-sm:text-[50%]">
+                      PWA
+                    </div>
+                    <div className="  text-xs font-semibold bg-yellow-200  p-1 px-2 rounded-3xl border-2 pointer-events-none border-black bg-opacity-50 max-sm:text-[50%]">
+                      FireBase
+                    </div>
+                     
+                  </div>
+                </div>
+              </div>
             {projects.map((project) => (
               <div className="flex flex-col px-4 md:px-10 py-3 rounded-xl shadow-2xl items-center gap-5   cursor-pointer cardss">
                 <div>
-                  <img className="grayscale hover:grayscale-0" src={project.img} alt="" />
+                  <img className=" " src={project.img} alt="" />
                 </div>
                 <div className="text-center flex flex-col justify-center lg:px-14 items-center h-full gap-2 te">
                   <h1 className="text-2xl font-semibold">{project.title}</h1>
@@ -118,6 +177,7 @@ const Projects = () => {
                 </div>
               </div>
             ))}
+            
           </div>
         </motion.div>
       </div>

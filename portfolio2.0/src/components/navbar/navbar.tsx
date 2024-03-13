@@ -1,8 +1,10 @@
 import "./Navbar.css";
 import logo from "../../assets/nobg_logo.png";
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
  import DW from "../dark/dark_white";
+  
+ import { Drawer } from "vaul";
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -59,35 +61,23 @@ const Navbar = () => {
         <li className="p-4">
           <DW />
         </li>
-      </ul>
-
-      <div onClick={chang} className="block md:hidden">
-        <div className="flex flex-row gap-5 justify-center items-center">
-          <div>
-            <DW />
-          </div>
-          <div>
-            {nav ? (
-              <AiOutlineClose size={20} color={"black"} />
-            ) : (
-              <AiOutlineMenu size={20} color={"black"} />
-            )}
-          </div>
-        </div>
-      </div>
-      <ul
-        className={
-          nav
-            ? " fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-amber-700 ease-in-out duration-500 z-40"
-            : "ease-in-out duration-500 fixed left-[-100%]"
-        }
-      >
-        <a href="/">
+      </ul>  
+       
+<Drawer.Root direction="right">
+      <Drawer.Trigger asChild className="block md:hidden">
+      <AiOutlineMenu size={20} color={"black"} /> 
+      </Drawer.Trigger>
+      <Drawer.Portal>
+        <Drawer.Overlay className="fixed inset-0 bg-black/40" />
+        <Drawer.Content className="bg-white flex flex-col rounded-t-[10px] rounded-b-[10px]  h-full w-[60%] mt-24 fixed bottom-0 right-0">
+          <div className="p-4 bg-white flex-1 h-full">
+            <ul className="text-center">
+          <a href="/">
           <img className="h-20 w-23" src={logo} alt="" />
         </a>
         <li className="p-4">
           <a
-            className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600 "
+            className="no-underline mx-4 cursor-pointer font-thin   hover:text-orange-600 "
             onClick={(e: React.MouseEvent) => {
               e.preventDefault();
               const aboutSection = document.getElementById("about");
@@ -101,7 +91,7 @@ const Navbar = () => {
 
         <li className="p-4">
           <a
-            className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600 "
+            className="no-underline mx-4 cursor-pointer font-thin  hover:text-orange-600 w-full "
             onClick={(e: React.MouseEvent) => {
               e.preventDefault();
               const aboutSection = document.getElementById("projects");
@@ -115,7 +105,7 @@ const Navbar = () => {
         <li className="p-4">
           {" "}
           <a
-            className="no-underline mx-4 cursor-pointer font-thin text-white hover:text-orange-600 "
+            className="no-underline mx-4 cursor-pointer font-thin   hover:text-orange-600 "
             onClick={(e: React.MouseEvent) => {
               e.preventDefault();
               const aboutSection = document.getElementById("contact");
@@ -126,7 +116,12 @@ const Navbar = () => {
             CONTACT US
           </a>
         </li>
-      </ul>
+        </ul>
+          </div>
+        </Drawer.Content>
+      </Drawer.Portal>
+    </Drawer.Root>
+       
     </div>
   );
 };
